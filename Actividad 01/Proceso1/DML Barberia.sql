@@ -18,7 +18,6 @@ CALL InsertRol ("Aseador");
 CALL InsertRol ("Vendedor");
 CALL InsertRol ("Guardia");
 
-SELECT * FROM rol;
 CALL InsertSer ("Corte cabello corto",50.000);
 CALL InsertSer ("Corte cabello medio",70.000);
 CALL InsertSer ("Corte cabello largo",90.000);
@@ -57,7 +56,6 @@ CALL InsertVen (2,1,2);
 
 CALL InsertdetVP (1,2);
 
-SELECT * FROM detalleventaproducto;
 
 CALL InsertdetVS (1,3);
 
