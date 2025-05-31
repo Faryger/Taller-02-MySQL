@@ -2,8 +2,6 @@ CALL InsertTipDocum ("TI");
 CALL InsertTipDocum ("CC");
 CALL InsertTipDocum ("CE");
 
-SELECT * FROM tipodocumento;
-
 CALL InsertRH ("O+");
 CALL InsertRH ("O-");
 CALL InsertRH ("A+");
@@ -12,8 +10,6 @@ CALL InsertRH ("B+");
 CALL InsertRH ("B-");
 CALL InsertRH ("AB+");
 CALL InsertRH ("AB-");
-
-SELECT * FROM tiposangre;
 
 CALL InsertRol ("Barbero");
 CALL InsertRol ("Estilista");
@@ -37,40 +33,27 @@ CALL InsertSer ("Corte dama cabello corto",40.000);
 CALL InsertSer ("Corte dama cabello medio",60.000);
 CALL InsertSer ("Corte dama cabello largo",90.000);
 
-SELECT * FROM servicios;
-
 CALL InsertProduct ("GEL",10.000);
 CALL InsertProduct ("CERA",15.000); 
 CALL InsertProduct ("SHAMPOO",50.000); 
 CALL InsertProduct ("MASCARILLA",50.000); 
 CALL InsertProduct ("ACONDICIONADOR",50.000); 
 
-SELECT * FROM productos;
-
-
 -- debiles
 CALL InsertPer("Alejandro","Moreno","Amaya",1019035234,3000000000,"Carrera Sol 12",1,1,1);
 CALL InsertPer("Robinson","Puentes","Alarcon",1023845234,3199448503,"Calle 23 A5",2,1,2);
 CALL InsertPer("Tomas","Laguna","Acevedo",31998477429,319847930,"Calle Cancun 45",3,4,6);
 
-SELECT * FROM personal;
-
 CALL InsertCl ("Santiago","Torres",3980000,9990000,2,1);
 CALL InsertCl ("Simon","Diaz",3140000,9790800,1,3);
-
-SELECT * FROM clientes;
 
 CALL InsertFac (10);
 CALL InsertFac (12);
 CALL InsertFac (13);
 CALL InsertFac (14);
 
-SELECT * FROM facturas;
-
 CALL InsertVen (1,3,1);
 CALL InsertVen (2,1,2);
-
-SELECT * FROM ventas;
 
 CALL InsertdetVP (1,2);
 
@@ -78,10 +61,6 @@ SELECT * FROM detalleventaproducto;
 
 CALL InsertdetVS (1,3);
 
-SELECT * FROM detalleventaservicio;
 
-
-CALL InsertCita("2025-07-15 10:00", 2, 3, 1);
-SELECT * FROM agendamiento;
 
 
